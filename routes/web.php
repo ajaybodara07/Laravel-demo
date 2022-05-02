@@ -7,7 +7,7 @@ Route::get('page/{page}/delete', [
     'as'   => 'page.delete',
     'uses' => 'PageController@destroy',
 ]);
-Route::resource('/page', 'PageController');
+Route::resource('/page-set', 'PageController');
 
 
 function is_active_sorter($key, $direction = 'ASC')
